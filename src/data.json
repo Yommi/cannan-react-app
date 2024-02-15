@@ -1,0 +1,189 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "Month": "January",
+      "Dates": ["4th - 17th", "18th"],
+      "Activities": ["Church Fast", "Corporate Anointing Friday"]
+    },
+    {
+      "id": 2,
+      "Month": "February",
+      "Dates": ["2nd", "5th", "6th", "7th", "8th"],
+      "Activities": [
+        "Corporate Anointing Friday",
+        "Resurrection Encounter",
+        "Canaan Drama Crusade",
+        "Corporate Anointing Friday",
+        "Workers Retreat"
+      ]
+    },
+    {
+      "id": 3,
+      "Month": "March",
+      "Dates": ["4th", "8th - 10th", "15th"],
+      "Activities": [
+        "Resurrection Encounter",
+        "Milk & Honey Seminar",
+        "Corporate Anointing Friday"
+      ]
+    },
+    {
+      "id": 4,
+      "Month": "April",
+      "Dates": ["1st", "12th", "20th", "24th - 26th"],
+      "Activities": [
+        "Milk & Honey Seminar",
+        "Corporate Anointing Friday",
+        "Workers Retreat",
+        "Church Fast"
+      ]
+    },
+    {
+      "id": 5,
+      "Month": "May",
+      "Dates": ["3rd", "6th", "17th - 19th", "24th", "31st"],
+      "Activities": [
+        "Corporate Anointing Friday",
+        "Resurrection Encounter",
+        "Gideonites' Weekend",
+        "Corporate Anointing Friday",
+        "Ministers Conference"
+      ]
+    },
+    {
+      "id": 6,
+      "Month": "June",
+      "Dates": [
+        "1st - 2nd",
+        "3rd",
+        "7th",
+        "12th",
+        "14th - 16th",
+        "21st",
+        "29th"
+      ],
+      "Activities": [
+        "Ministers Conference",
+        "Resurrection Encounter",
+        "Corporate Anointing Friday",
+        "The King's Messengers",
+        "Total Women Anniversary",
+        "Corporate Anointing Friday",
+        "Workers Retreat"
+      ]
+    },
+    {
+      "id": 7,
+      "Month": "July",
+      "Dates": ["1st", "3rd - 5th", "18th - 21st", "26th", "28th"],
+      "Activities": [
+        "Resurrection Encounter",
+        "Church Fast",
+        "Ministry Anniversary",
+        "Corporate Anointing Friday",
+        "Youth Concert"
+      ]
+    },
+    {
+      "id": 8,
+      "Month": "August",
+      "Dates": [
+        "2nd",
+        "5th",
+        "9th - 11th",
+        "16th",
+        "17th",
+        "22nd - 24th",
+        "30th"
+      ],
+      "Activities": [
+        "Vigil",
+        "Resurrection Encounter",
+        "Family Weekend",
+        "Corporate Anointing Friday",
+        "Workers Retreat",
+        "Tribe Of Adullam Retreat",
+        "Corporate Anointing Friday"
+      ]
+    },
+    {
+      "id": 9,
+      "Month": "September",
+      "Dates": ["2nd", "13th", "20th - 22nd", "27th"],
+      "Activities": [
+        "Resurrection Encounter",
+        "Corporate Anointing Friday",
+        "Teenager's Weekend",
+        "Corporate Anointing Friday"
+      ]
+    },
+    {
+      "id": 10,
+      "Month": "October",
+      "Dates": ["4th - 5th", "7th", "11th - 13th", "19th", "25th - 27th"],
+      "Activities": [
+        "Prayer Retreat",
+        "Resurrection Encounter",
+        "Tribe Of Adullam Retreat",
+        "Workers Retreat",
+        "Milk & Honey Seminar"
+      ]
+    },
+    {
+      "id": 11,
+      "Month": "November",
+      "Dates": [
+        "1st",
+        "3rd",
+        "4th",
+        "6th - 8th",
+        "15th - 17th",
+        "22nd",
+        "24th",
+        "27th",
+        "29th"
+      ],
+      "Activities": [
+        "Corporate Anointing Friday",
+        "Tribe Of Adullam Dinner",
+        "Resurrection Encounter",
+        "Church Fast",
+        "Children's Weekend",
+        "Corporate Anointing Friday",
+        "Annual Power Center Fellowship",
+        "The King's Messengers",
+        "Prayer Marathon"
+      ]
+    },
+    {
+      "id": 12,
+      "Month": "December",
+      "Dates": ["2nd", "8th", "12th - 15th", "20th", "24th", "25th", "31st"],
+      "Activities": [
+        "Resurrection Encounter",
+        "Annual Thanksgiving",
+        "Annual Convention",
+        "Corporate Anointing Friday",
+        "Christmas Carol",
+        "Christmas",
+        "New Years Eve"
+      ]
+    }
+  ],
+
+  "quotes": [
+    {
+      "id": 1,
+      "quote": "The lord said thou shall not steal"
+    },
+    {
+      "id": 2,
+      "quote": "The lord said again"
+    },
+    {
+      "id": 3,
+      "quote": "Again the lord said"
+    }
+  ]
+}

@@ -1,0 +1,727 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"); /* Montserrat font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"); /* Poppins (500) font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"); /* Poppins (300) font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"); /* Poppins (400) font*/
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"); /* Search */
+/*<span class="material-symbols-outlined">search</span>*/
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"); /* Headphones*/
+/*<span class="material-symbols-outlined">headphones</span>*/
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"); /* Download button*/
+/*<span class="material-symbols-outlined">download</span>*/
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"); /* Play Circle*/
+/*<span class="material-symbols-outlined">play_circle</span>*/
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"); /* videocam */
+/*<span class="material-symbols-outlined">videocam</span>*/
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"); /* Visibility*/
+/*<span class="material-symbols-outlined">visibility</span>*/
+
+:root {
+  --gray10: #3d3d3d;
+  --primary1: #d8e1ed;
+  --primary10: #142337;
+  --primary11: #0c1521;
+  --primary7: #325889;
+  --primary8: #28466e;
+  --primary9: #1e3553;
+  --second1: #ffe1ff;
+  --second5: #ff82ff;
+  --second6: #ff69ff;
+  --white6: #ffffff;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MEDIA QUERIES (PHONES) */
+
+html {
+  font-size: 1.0416666666666667vw;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+body {
+  background: #fbfbfbd6;
+  margin: 0;
+  font-family: "poppins";
+  font-weight: 500;
+}
+
+/* OGNav */
+
+.NavBar-Cont {
+  @apply max-w-[screen] h-[15vh];
+}
+
+.NavBar {
+  @apply w-full h-full flex;
+}
+
+.NavBar .NavBarInner {
+  @apply w-[95%] h-4/6 m-auto flex justify-between text-[#FFF];
+}
+
+.NavBar .NavBarInner .left {
+  @apply flex justify-center items-center w-[25%];
+}
+
+.NavBar .NavBarInner .left .imgDiv {
+  @apply w-[5vw];
+}
+
+.NavBar .NavBarInner .left header {
+  @apply text-3xl;
+}
+
+.NavBar .NavBarInner .navDiv {
+  @apply w-[60%];
+}
+
+.NavBar .NavBarInner .navDiv ul {
+  @apply flex justify-between items-center h-full text-lg;
+}
+
+.NavBar .NavBarInner .navDiv li {
+  @apply hover:scale-110;
+}
+
+/* HomeTop */
+
+.top {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../public/Images/image1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.top-text-cont {
+  @apply ml-[4.17vw] mt-[3%] w-[70%] flex flex-col h-[75%];
+}
+
+.top2 {
+  position: relative;
+  background-image: url("../public/Images/image2.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.welcome {
+  width: 60%;
+  height: 55%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4vw;
+  color: #ffffff;
+}
+
+.welcome-p {
+  width: 34.72vw;
+  height: 40%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 1.25vw;
+  line-height: 2.43vw;
+  color: #ffffff;
+}
+
+/* HomeService */
+
+.servicetimedivs {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+}
+
+.servicetimehead {
+  font-family: Poppins;
+  font-size: 1.8vw;
+  color: #1e3553;
+}
+
+.servicetimep {
+  font-family: Poppins;
+  font-size: 1.2vw;
+  color: #1e3553;
+  font-weight: 400;
+}
+
+/* HomeQuotes */
+.slideShowBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  border: none;
+  background: #28466e;
+  font-family: inherit;
+  color: #fff;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.slideShowBtn:hover {
+  scale: 0.9;
+  background-color: #1e3553;
+}
+
+/* AbtSion */
+
+.sionCont {
+  @apply flex w-11/12 mt-12 mx-auto h-96 rounded;
+}
+
+.sionCont div {
+  @apply flex flex-col justify-between m-auto w-[88%] h-[60%];
+}
+
+.sionCont div header {
+  @apply text-center text-[2.5rem] h-[20%];
+}
+
+.sionCont div p {
+  @apply text-xl font-[400] h-[70%];
+}
+
+/* AbtLeaders */
+.bigCont {
+  @apply mt-16 mx-auto w-11/12 h-screen bg-[#FFF] text-[#1E3553];
+}
+
+.bigCont header {
+  @apply text-center h-[10%] text-[2.5rem];
+}
+
+.leaders {
+  @apply text-xl;
+}
+
+.leaders .pstName span {
+  @apply text-[#5D82B4];
+}
+
+.leaders .pstRole {
+  @apply text-[#5D82B4];
+}
+
+/* YoutubeStream */
+.streamHeaderDivs {
+  @apply w-[50%] h-full flex flex-col items-center justify-center text-xl;
+}
+
+.streamHeaderDivsCont {
+  @apply w-[30%] h-full flex flex-col justify-center;
+}
+
+.streamHeaderDivs header {
+  @apply hover:scale-95;
+}
+
+.streamActiveLine {
+  @apply w-full h-[3%] rounded-lg bg-[#1E3553];
+}
+
+/* WatchBCastTime */
+
+.liveTime {
+  @apply w-full h-[15%] flex flex-col justify-between;
+}
+
+.liveTime p {
+  @apply ml-4;
+}
+
+.liveTime .pday {
+  @apply text-sm;
+}
+
+.liveTime .ptime {
+  @apply text-lg;
+}
+
+.liveTime div {
+  @apply bg-[#1E3553] w-full h-[0.05rem];
+}
+
+/* WatchVid */
+
+.vidAudioOutCont {
+  @apply text-[#1E3553] mt-[5%] w-full h-[10%h] flex;
+}
+
+.vidAudioInnCont {
+  @apply m-auto h-[60%] w-[70%] flex justify-between;
+}
+
+.vidAudioDiv {
+  @apply w-32 h-full;
+}
+
+.vidAudioDiv p {
+  @apply text-xl hover:scale-110 cursor-pointer;
+}
+
+.vidAudioDiv div {
+  @apply bg-[#3C69A5] w-full h-[0.2rem] rounded-xl;
+}
+
+.VidAudiohiddenBar {
+  @apply hidden;
+}
+
+.videoCont {
+  @apply mt-[5%] h-[80vh];
+}
+
+.videoContInn {
+  @apply w-[90%] h-full mx-auto flex justify-between;
+}
+
+.video {
+  @apply w-[45%]  h-full;
+}
+
+.video .imgCont {
+  @apply h-[75%];
+}
+
+.video .imgCont img {
+  @apply h-full;
+}
+
+.vidInfo {
+  @apply bg-[#1E3553] h-[25%] flex flex-col;
+}
+
+.vidInfo .vidInfoInn {
+  @apply w-[95%] h-[60%] m-auto;
+}
+
+.vidIconsDiv {
+  @apply flex h-[40%] items-center justify-end text-[#FF69FF] text-3xl;
+}
+
+.vidIconsDiv .sepIcons {
+  @apply flex justify-between w-[15%];
+}
+
+.icons {
+  @apply hover:scale-110 cursor-pointer;
+}
+
+.vidTexts {
+  @apply text-[#FFF];
+}
+
+.vidTexts header {
+  @apply text-xl;
+}
+
+/* EvenCalTop */
+
+/* .searchBarOutCont {
+  @apply mx-auto w-[90%] h-[30vh] flex justify-end items-center font-light;
+}
+
+.searchBarOutCont input {
+  @apply p-1 border-2 rounded bg-[#FFF] shadow-2xl w-[90%] h-[15%];
+} */
+
+/* UpComeEvents */
+
+/* .EventsYearOutCont {
+  @apply max-w-[screen] h-[25vh] text-[#1E3553];
+}
+
+.EventsYearInnCont {
+  @apply w-[80%] h-full mx-auto flex justify-between items-center;
+}
+
+.EventsYearInnCont .EventsYearTextCont {
+  @apply h-[50%] w-[15%] flex flex-col text-3xl;
+}
+
+.EventsYearInnCont .EventsYearTextCont header {
+  @apply hover:scale-110 cursor-pointer;
+}
+
+.EventsActiveBar {
+  @apply w-full h-[2%] rounded-lg bg-[#1E3553];
+} */
+
+/* Calendar */
+
+.TheEventsOutCont {
+  @apply mt-12 w-[80%] mx-auto flex flex-col text-[#1E3553];
+}
+
+.TheEventsOutCont .eventMonth {
+  @apply text-center text-4xl;
+}
+
+.TheEventsOutCont .TheEventsInnCont {
+  @apply h-[35vh] mt-6 rounded-xl bg-[#FFF] shadow-2xl flex;
+}
+
+.TheEventsDiv {
+  @apply w-[20%] h-[40%]  my-auto ml-8 flex flex-col justify-between;
+}
+
+.TheEventsDiv .EventDay {
+  @apply text-2xl;
+}
+
+.TheEventsDiv .EventAct {
+  @apply text-xl font-bold;
+}
+
+/* EventsCalender */
+/* 
+.CalenderEventsOutCont {
+  @apply mt-8 w-[80%]  mx-auto flex flex-col justify-between;
+}
+
+.CalenderEventsOutCont .CalenderMonth {
+  @apply text-3xl mx-auto;
+}
+
+.CalenderEventsOutCont .EachWeekEvents {
+  @apply mt-8 w-full flex justify-between h-40;
+}
+
+.CalenderEventsOutCont .EachWeekEvents header {
+  @apply text-2xl w-[40%] h-full flex items-center;
+}
+
+.CalenderEventsOutCont .EachWeekEvents .EventsLine {
+  @apply h-full w-px bg-[#808080];
+}
+
+.CalenderEventsOutCont .EachWeekEvents div {
+  @apply w-[40%] h-full flex flex-col justify-between items-center;
+} */
+
+/* GetInvolvedBody */
+
+.getInDivs {
+  @apply hover:scale-95 cursor-pointer bg-red-100 h-[55vh] bg-[#142337] flex flex-col justify-between items-center;
+}
+
+.getInDivs header {
+  @apply flex my-auto text-2xl text-[#FFF];
+}
+
+.getInDivs img {
+  @apply h-[85%];
+}
+
+/* GetInvLinks */
+
+.getInvLinkOutCont {
+  @apply h-[100vh] max-w-[screen] flex flex-col justify-between;
+}
+
+.getInvLinkImgCont {
+  @apply mt-5 w-[70%] h-[60%] mx-auto;
+}
+
+.getInvLinkImg {
+  @apply w-full h-full object-cover;
+}
+
+.getInvLinkheader {
+  @apply text-3xl mx-auto text-[#1E3553];
+}
+
+.getInvLinkp {
+  @apply text-center w-[75%] mx-auto flex items-center font-light;
+}
+
+@media screen and (max-width: 900px) and (min-width: 451px) {
+  .getInvLinkOutCont {
+    @apply h-[130vh];
+  }
+  .getInvLinkImgCont {
+    @apply h-[50%];
+  }
+  .getInvLinkheader {
+    @apply text-[3vw];
+  }
+  .getInvLinkp {
+    @apply text-[2vw];
+  }
+}
+
+/* Footer */
+
+.socialLinks:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.footNav ul li:hover {
+  color: #ff69ff;
+  scale: 1.1;
+}
+
+@media screen and (max-width: 451px) {
+  /* OGNav/ BlueNav */
+  .NavBar-Cont {
+    @apply h-[20vh];
+  }
+  .NavBar .NavBarInner .left {
+    @apply w-[100%] justify-between;
+  }
+  .NavBar .NavBarInner .left .imgDiv {
+    @apply w-[15vw];
+  }
+  .NavBar .NavBarInner .left header {
+    font-size: 6vw;
+  }
+  .NavBar .NavBarInner .left .menuBtn {
+    @apply text-[8vw] z-[1];
+  }
+  .navDiv {
+    @apply hidden;
+  }
+
+  /* HomeTop */
+  .top {
+    height: 100vh;
+  }
+  .top .top-text-cont {
+    height: 50%;
+    width: 90%;
+    margin-top: 10vh;
+  }
+  .top .welcome {
+    width: 100%;
+    font-size: 6.5vw;
+    font-weight: 300;
+  }
+  .top .welcome-p {
+    font-size: 3.2vw;
+    width: 85%;
+    line-height: 3.5vh;
+    font-weight: 300;
+  }
+
+  /* HomeService */
+  .HomeService-overall-cont {
+    height: 100vh;
+  }
+  .servicetimedivs {
+    height: unset;
+    width: 45vh;
+  }
+  .servicetimehead {
+    font-size: 4vw;
+  }
+  .servicetimep {
+    font-size: 3vw;
+  }
+
+  /* HomeQuotes */
+  .slideShowBtn {
+    height: 8vw;
+    width: 8vw;
+    font-size: 4vw;
+  }
+
+  /* AbtSion */
+  .sionCont {
+    @apply mt-[10vh] h-[50vh];
+  }
+  .sionCont div {
+    @apply h-[50%] w-full;
+  }
+  .sionCont div header {
+    @apply text-[6vw] h-0;
+  }
+  .sionCont div p {
+    @apply text-[3.5vw] font-normal leading-[3vh];
+  }
+
+  /* AbtLeaders */
+  .bigCont {
+    @apply mt-[10vh];
+  }
+  .bigCont header {
+    @apply text-[6vw];
+  }
+  .leaders {
+    @apply text-[3.8vw] leading-[3vh];
+  }
+
+  /* Streams */
+  .streamHeaderDivs {
+    @apply text-[4vw] w-full;
+  }
+  .streamHeaderDivsCont {
+    @apply w-[80%];
+  }
+  .streamHeaderDivs header {
+    @apply mb-[1vh];
+  }
+
+  /* Calendar */
+  .TheEventsOutCont {
+    @apply mt-[5vh] w-[90%];
+  }
+  .TheEventsOutCont .eventMonth {
+    @apply text-[6vw];
+  }
+  .TheEventsOutCont .TheEventsInnCont {
+    @apply mt-[2vh] h-[30vh];
+  }
+  .TheEventsDiv {
+    @apply w-[unset];
+  }
+  .TheEventsDiv .EventDay {
+    @apply text-[4vw];
+  }
+  .TheEventsDiv .EventAct {
+    @apply text-[3vw];
+  }
+  .TheEventsDiv .EventChurch {
+    @apply text-[3vw];
+  }
+
+  /* GetInvolvedBody */
+  .getInDivs {
+    @apply mt-[3vh];
+  }
+  .getInDivs header {
+    @apply text-[4vw];
+  }
+
+  /* GetInvLinks */
+  .getInvLinkOutCont {
+    @apply h-[130vh];
+  }
+  .getInvLinkImgCont {
+    @apply h-[50%] w-[95%];
+  }
+  .getInvLinkheader {
+    @apply text-[5vw];
+  }
+  .getInvLinkp {
+    @apply text-[3vw] w-[90%];
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 900px) {
+  /* OGNav */
+  .NavBar .NavBarInner .left {
+    @apply w-[25%];
+  }
+  .NavBar .NavBarInner .left header {
+    @apply hidden;
+  }
+  .NavBar .NavBarInner .left .imgDiv {
+    @apply w-[10vw];
+  }
+  .NavBar .NavBarInner .navDiv {
+    @apply w-full;
+  }
+  .NavBar .NavBarInner .navDiv li {
+    @apply mx-auto;
+  }
+  .NavBar .NavBarInner .navDiv li {
+    @apply text-[2vw];
+  }
+
+  /* HomeTop */
+  .top-text-cont {
+    @apply w-[90%] h-[60%] my-auto;
+  }
+  .welcome {
+    @apply text-[5vw];
+  }
+  .welcome-p {
+    @apply text-[2vw] w-[60%];
+  }
+
+  /* HomeService */
+  .servicetimedivs {
+    @apply w-[35%];
+  }
+  .servicetimehead {
+    @apply text-[2.5vw];
+  }
+  .servicetimep {
+    @apply text-[1.5vw];
+  }
+
+  /* AbtSion */
+  .sionCont div {
+    @apply h-[70%];
+  }
+  .sionCont div header {
+    @apply text-[3vw];
+  }
+  .sionCont div p {
+    @apply text-[1.8vw] leading-[3vh];
+  }
+
+  /* AbtLeaders */
+
+  .bigCont {
+    @apply w-[95%];
+  }
+
+  .bigCont header {
+    @apply text-[3vw];
+  }
+  .leaders {
+    @apply text-[2vw];
+  }
+
+  /* EveCal */
+  .streamHeaderDivs {
+    @apply text-[2.5vw];
+  }
+  .streamHeaderDivsCont {
+    @apply w-[50%];
+  }
+
+  /* Calendar */
+  .TheEventsOutCont .eventMonth {
+    @apply text-[3vw];
+  }
+  .TheEventsDiv {
+    @apply w-[50%];
+  }
+  .TheEventsDiv .EventDay {
+    @apply text-[2.5vw];
+  }
+  .TheEventsDiv .EventAct {
+    @apply text-[1.8vw];
+  }
+  .TheEventsDiv .EventChurch {
+    @apply text-[2vw];
+  }
+
+  /* GetInvolvedBody */
+  .getInDivs {
+    @apply h-[50vh];
+  }
+  .getInDivs header {
+    @apply text-[2.5vw];
+  }
+  .getInDivs img {
+    @apply w-full;
+  }
+}
