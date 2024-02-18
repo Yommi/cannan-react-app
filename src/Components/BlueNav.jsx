@@ -8,11 +8,14 @@ const BlueNav = ({ menuActive, setMenuActive }) => {
     color: "#ff69ff",
   };
 
+  let homeColor;
   let livestream;
   let events;
   let getInvolved;
 
-  if (currentPath === "/livestream") {
+  if (currentPath === "/") {
+    homeColor = color;
+  } else if (currentPath === "/livestream") {
     livestream = color;
   } else if (currentPath === "/events") {
     events = color;
@@ -51,7 +54,9 @@ const BlueNav = ({ menuActive, setMenuActive }) => {
           <nav className="navDiv">
             <ul>
               <li>
-                <Link to="/">HOME</Link>
+                <Link to="/" style={homeColor}>
+                  HOME
+                </Link>
               </li>
               <li>
                 <Link to="/aboutUs">ABOUT US</Link>
