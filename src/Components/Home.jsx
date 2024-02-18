@@ -6,6 +6,8 @@ import HomeLocation from "./HomeComp/HomeLocation";
 import HomeQuotes from "./HomeComp/HomeQuotes";
 import HomeNewHere from "./HomeComp/HomeNewHere";
 import HomeGroups from "./HomeComp/HomeGroups";
+import BlueNav from "./BlueNav";
+import HomeVid from "./HomeComp/HomeVid";
 
 const Home = ({ menuActive, setMenuActive }) => {
   const handleClick = () => {
@@ -14,8 +16,9 @@ const Home = ({ menuActive, setMenuActive }) => {
 
   return (
     <div>
-      <HomeTop menuActive={menuActive} setMenuActive={setMenuActive} />
+      <BlueNav menuActive={menuActive} setMenuActive={setMenuActive} />
       <div onClick={handleClick}>
+        <HomeVid />
         <HomeService />
         <HomeLocation />
         <HomeQuotes />

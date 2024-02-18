@@ -27,7 +27,7 @@ const AbtFounders = () => {
           <p
             className={
               screenSize >= 451
-                ? screenSize
+                ? screenSize <= 900
                   ? " w-[50%] h-[90%] my-auto text-[2vw] font-normal "
                   : " w-[50%] h-[90%] my-auto text-[1.5rem] font-normal "
                 : " w-[100%] my-auto text-[3vw] font-normal transform translate-y-[110vh] "
