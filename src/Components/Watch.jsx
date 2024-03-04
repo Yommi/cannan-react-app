@@ -13,10 +13,7 @@ const Watch = ({ menuActive, setMenuActive }) => {
     <div>
       <BlueNav menuActive={menuActive} setMenuActive={setMenuActive} />
       <div onClick={handleClick}>
-        <Routes>
-          <Route path="" element={<YoutubeStream />} />
-          <Route path="facebookstream" element={<FacebookStream />} />
-        </Routes>
+        <YoutubeStream />
       </div>
     </div>
   );
