@@ -1,5 +1,5 @@
-import { Routes, Route, Link } from "react-router-dom";
-import { IoMdMenu } from "react-icons/io";
+import { Link } from 'react-router-dom';
+import { IoMdMenu } from 'react-icons/io';
 
 const OGNav = ({ menuActive, setMenuActive }) => {
   const currentPath = window.location.pathname;
@@ -8,10 +8,10 @@ const OGNav = ({ menuActive, setMenuActive }) => {
   let aboutColor;
 
   let color = {
-    color: "#ff69ff",
+    color: '#ff69ff',
   };
 
-  if (currentPath === "/aboutUs") {
+  if (currentPath === '/aboutUs') {
     aboutColor = color;
   } else {
     homeColor = color;
@@ -19,7 +19,7 @@ const OGNav = ({ menuActive, setMenuActive }) => {
 
   const bgColor = {
     background:
-      "linear-gradient( 180deg, #1e3553 -38.46%, rgba(30, 53, 83, 0) 127.56%)",
+      'linear-gradient( 180deg, #1e3553 -38.46%, rgba(30, 53, 83, 0) 127.56%)',
   };
 
   const screenSize = window.innerWidth;
@@ -38,9 +38,12 @@ const OGNav = ({ menuActive, setMenuActive }) => {
             </div>
             <header>Canaan Ministries</header>
             {screenSize <= 451 ? (
-              <IoMdMenu onClick={handleClick} className="menuBtn" />
+              <IoMdMenu
+                onClick={handleClick}
+                className="menuBtn"
+              />
             ) : (
-              ""
+              ''
             )}
           </div>
           <nav className="navDiv">
@@ -61,9 +64,9 @@ const OGNav = ({ menuActive, setMenuActive }) => {
               <li>
                 <Link to="/events">CALENDAR</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/getInvolved">GET INVOLVED</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
