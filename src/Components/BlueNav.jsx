@@ -1,32 +1,33 @@
-import { Link } from "react-router-dom";
-import { IoMdMenu } from "react-icons/io";
+import { Link } from 'react-router-dom';
+import { IoMdMenu } from 'react-icons/io';
 
 const BlueNav = ({ menuActive, setMenuActive }) => {
   const currentPath = window.location.pathname;
 
   let color = {
-    color: "#ff69ff",
+    color: '#ff69ff',
   };
 
   let homeColor;
   let livestream;
   let events;
-  let getInvolved;
+  // let getInvolved;
 
-  if (currentPath === "/") {
+  if (currentPath === '/') {
     homeColor = color;
-  } else if (currentPath === "/livestream") {
+  } else if (currentPath === '/livestream') {
     livestream = color;
-  } else if (currentPath === "/events") {
+  } else if (currentPath === '/events') {
     events = color;
-  } else if (currentPath === "/getInvolved") {
-    getInvolved = color;
   }
+  // else if (currentPath === '/getInvolved') {
+  //   getInvolved = color;
+  // }
 
   const colors = {
     navColors: {
-      background: "#1E3553",
-      colors: "#FFF",
+      background: '#1E3553',
+      colors: '#FFF',
     },
   };
 
@@ -46,9 +47,12 @@ const BlueNav = ({ menuActive, setMenuActive }) => {
             </div>
             <header>Canaan Ministries</header>
             {screenSize <= 451 ? (
-              <IoMdMenu onClick={handleClick} className="menuBtn" />
+              <IoMdMenu
+                onClick={handleClick}
+                className="menuBtn"
+              />
             ) : (
-              ""
+              ''
             )}
           </div>
           <nav className="navDiv">
@@ -71,11 +75,11 @@ const BlueNav = ({ menuActive, setMenuActive }) => {
                   CALENDAR
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/getInvolved" style={getInvolved}>
                   GET INVOLVED
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

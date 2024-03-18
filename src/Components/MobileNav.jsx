@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import Watch from "./Watch";
+import { Link } from 'react-router-dom';
+// import Watch from './Watch';
 
 const MobileNav = ({ menuActive, setMenuActive }) => {
   const handleClick = () => {
@@ -9,35 +9,38 @@ const MobileNav = ({ menuActive, setMenuActive }) => {
   const currentPath = window.location.pathname;
 
   let color = {
-    color: "#ff69ff",
+    color: '#ff69ff',
   };
 
   let home;
   let aboutUs;
   let livestream;
   let events;
-  let getInvolved;
+  // let getInvolved;
 
-  if (currentPath === "/") {
+  if (currentPath === '/') {
     home = color;
   }
-  if (currentPath === "/aboutUs") {
+  if (currentPath === '/aboutUs') {
     aboutUs = color;
   }
-  if (currentPath === "/livestream") {
+  if (currentPath === '/livestream') {
     livestream = color;
-  } else if (currentPath === "/events") {
+  } else if (currentPath === '/events') {
     events = color;
-  } else if (currentPath === "/getInvolved") {
-    getInvolved = color;
   }
+  //  else if (currentPath === '/getInvolved') {
+  //   getInvolved = color;
+  // }
 
   return (
     <div
       style={{
-        overflow: "hidden",
-        transition: "transform 1s",
-        transform: menuActive ? "translateX(0%)" : "translateX(-100%)",
+        overflow: 'hidden',
+        transition: 'transform 1s',
+        transform: menuActive
+          ? 'translateX(0%)'
+          : 'translateX(-100%)',
       }}
       className=" flex absolute top-0 h-screen w-full z-[1] bg-[#28466E]"
     >
@@ -49,25 +52,37 @@ const MobileNav = ({ menuActive, setMenuActive }) => {
             </Link>
           </li>
           <li>
-            <Link style={aboutUs} onClick={handleClick} to="/aboutUs">
+            <Link
+              style={aboutUs}
+              onClick={handleClick}
+              to="/aboutUs"
+            >
               ABOUT US
             </Link>
           </li>
           <li>
-            <Link style={livestream} onClick={handleClick} to="/livestream">
+            <Link
+              style={livestream}
+              onClick={handleClick}
+              to="/livestream"
+            >
               LIVESTREAM
             </Link>
           </li>
           <li>
-            <Link style={events} onClick={handleClick} to="/events">
+            <Link
+              style={events}
+              onClick={handleClick}
+              to="/events"
+            >
               CALENDAR
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link style={getInvolved} onClick={handleClick} to="/getInvolved">
               GET INVOLVED
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>
