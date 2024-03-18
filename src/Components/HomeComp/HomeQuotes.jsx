@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Data from "../../data.json";
 
@@ -35,11 +33,11 @@ const HomeQuotes = () => {
     setMove(!move);
   };
 
-  // Automatically change quote in 5 seconds
+  // Automatically change quote in 10 seconds
   const [move, setMove] = useState(true);
 
   useEffect(() => {
-    setTimeout(rightClick, 5000);
+    setTimeout(rightClick, 10000);
   }, [move]);
 
   const leftBtn = {
@@ -103,7 +101,11 @@ const HomeQuotes = () => {
               transform: `translateX(${100 * slides[i]}%)`,
             }}
           >
-            <div className={screenSize >= 451 ? "max-w-[80%]" : "max-w-[65%]"}>
+            <div
+              className={
+                screenSize >= 451 ? "max-w-[80%]" : "max-w-[65%]"
+              }
+            >
               <header
                 className={
                   screenSize >= 451
@@ -129,10 +131,18 @@ const HomeQuotes = () => {
             </div>
           </div>
         ))}
-        <button onClick={leftClick} style={leftBtn} className="slideShowBtn">
+        <button
+          onClick={leftClick}
+          style={leftBtn}
+          className="slideShowBtn"
+        >
           &larr;
         </button>
-        <button onClick={rightClick} style={rightBtn} className="slideShowBtn">
+        <button
+          onClick={rightClick}
+          style={rightBtn}
+          className="slideShowBtn"
+        >
           &rarr;
         </button>
       </div>

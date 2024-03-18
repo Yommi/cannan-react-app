@@ -76,7 +76,13 @@
     {
       "id": 7,
       "Month": "July",
-      "Dates": ["1st", "3rd - 5th", "18th - 21st", "26th", "28th"],
+      "Dates": [
+        "1st",
+        "3rd - 5th",
+        "18th - 21st",
+        "26th",
+        "28th"
+      ],
       "Activities": [
         "Resurrection Encounter",
         "Church Fast",
@@ -121,7 +127,13 @@
     {
       "id": 10,
       "Month": "October",
-      "Dates": ["4th - 5th", "7th", "11th - 13th", "19th", "25th - 27th"],
+      "Dates": [
+        "4th - 5th",
+        "7th",
+        "11th - 13th",
+        "19th",
+        "25th - 27th"
+      ],
       "Activities": [
         "Prayer Retreat",
         "Resurrection Encounter",
@@ -159,7 +171,15 @@
     {
       "id": 12,
       "Month": "December",
-      "Dates": ["2nd", "8th", "12th - 15th", "20th", "24th", "25th", "31st"],
+      "Dates": [
+        "2nd",
+        "8th",
+        "12th - 15th",
+        "20th",
+        "24th",
+        "25th",
+        "31st"
+      ],
       "Activities": [
         "Resurrection Encounter",
         "Annual Thanksgiving",
@@ -175,15 +195,19 @@
   "quotes": [
     {
       "id": 1,
-      "quote": "The lord said thou shall not steal"
+      "quote": "WHATEVER GOD DOES. THERE ARE TWO SIDES: GOD'S SIDE AND YOUR SIDE. THE RESULT DEPENDS ON HOW YOU RECIEVE IT"
     },
     {
       "id": 2,
-      "quote": "The lord said again"
+      "quote": "NOBODY CAN MOCK GOD FOR HE'LL RESPOND. BUT BY THE GRACE OF GOD, MAY YOU NOT SPEAK AMISS! "
     },
     {
       "id": 3,
-      "quote": "Again the lord said"
+      "quote": "WHEN YOU COME TO THE TABLE OF THE LORD (HOLY COMMUNION). YOU MUST BE HUNGRY. THERE HAS TO BE A DESIRE "
+    },
+    {
+      "id": 4,
+      "quote": "YOU DON'T HAVE TO BE PERFECT FOR GOD TO USE YOU BUT YOU HAVE TO BE HONEST"
     }
   ]
 }
