@@ -10,7 +10,6 @@ const HomeVid = () => {
       }
     >
       <video
-        autoPlay
         src="/Images/Announcement.mp4"
         controls
         type="video/mp4"
