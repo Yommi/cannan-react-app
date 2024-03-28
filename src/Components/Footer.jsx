@@ -127,13 +127,14 @@ const Footer = ({ menuActive, setMenuActive }) => {
               <li>
                 <Link to="/events">CALENDAR</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/getInvolved">GET INVOLVED</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <p className="text-center ">
-            Kwara State: 143 Ibrahim Taiwo Rd, 240101, Ilorin, Nigeria
+            Kwara State: 143 Ibrahim Taiwo Rd, 240101, Ilorin,
+            Nigeria
           </p>
         </div>
       </div>
