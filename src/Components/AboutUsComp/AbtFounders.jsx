@@ -25,7 +25,7 @@ const AbtFounders = () => {
           className={
             screenSize >= 451
               ? " flex justify-between h-[90%] w-[90%] mt-6 mx-auto "
-              : " flex flex-col items-center justify-between w-[90%] mt-6 mx-auto "
+              : " flex flex-col items-center justify-between w-[90%] mt-[6vh] mx-auto "
           }
         >
           <p
